@@ -23,6 +23,9 @@ public class EmployeesMain {
        for(Employees e: updatedSalariedEmp){
            System.out.println(e);
        }
+
+       //employees whose name starts with 'M'
+        eList.stream().filter(e->e.getName().startsWith("M")).forEach(e->System.out.println(e));
     }
 
 }
